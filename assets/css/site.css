@@ -1,0 +1,50 @@
+/* Estilos próprios do site estático — carregado por último, depois do CSS do Elementor. */
+
+/* Crédito de autoria no rodapé, abaixo da linha de copyright. */
+.site-footer-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
+}
+
+.site-footer-credit:hover,
+.site-footer-credit:focus-visible {
+  opacity: 1;
+}
+
+.site-footer-credit-text {
+  font-family: "Inter", Sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff5e;
+  white-space: nowrap;
+}
+
+.site-footer-credit-logo {
+  height: 18px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  /* mais compacto para não passar por baixo do botão flutuante do WhatsApp */
+  .site-footer-credit {
+    margin-top: 10px;
+    gap: 6px;
+  }
+
+  .site-footer-credit-logo {
+    height: 15px;
+  }
+
+  .site-footer-credit-text {
+    font-size: 9px;
+  }
+}

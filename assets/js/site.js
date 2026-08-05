@@ -38,6 +38,12 @@
     for (var k in env) if (env[k]) document.body.classList.add('e--ua-' + k);
   })();
 
+  // ------------------------------------------------- ano corrente no rodapé
+  (function footerYear() {
+    var el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+
   // ------------------------------------------------------------- device mode
   var BREAKPOINTS = { mobile: 767, tablet: 1024 };
   function deviceMode() {
