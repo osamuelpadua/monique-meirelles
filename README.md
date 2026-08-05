@@ -5,6 +5,8 @@ de dados. É só HTML, CSS, JS e mídia — basta servir a pasta.
 
 ```
 index.html
+robots.txt
+sitemap.xml
 assets/
   css/    folhas do tema, do Elementor e das fontes (auto-hospedadas)
   fonts/  woff2 dos subsets latin e latin-ext
@@ -28,7 +30,8 @@ npx serve .
   depoimentos (via Swiper 8) e o lightbox do vídeo.
 - As fontes do Google são servidas do próprio site.
 - O Font Awesome foi removido: todos os ícones da página são SVG inline.
-- Tags de RSS, oEmbed, xmlrpc, canonical, shortlink e emoji do WordPress foram removidas.
+- Tags de RSS, oEmbed, xmlrpc, shortlink e emoji do WordPress foram removidas. Os
+  metadados de SEO, a URL canônica e os dados estruturados ficam no HTML estático.
 - O mapa da seção Contato continua sendo um iframe do Google Maps — é a única
   requisição que sai do domínio.
 - O rodapé foi refeito no mesmo padrão do site do Dr. Fred: copyright à esquerda com
